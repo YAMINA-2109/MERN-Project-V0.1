@@ -1,0 +1,119 @@
+section .devSec{
+    background-color: #e1f0ff;
+}
+section .devSec .title-sec{
+	margin-top: 60px;
+}
+/* section .devSec .auther-style{
+    margin-top: 40px; 
+} */
+section .next-dev{
+    margin-bottom: 60px;
+}
+section a{
+    color:black
+}
+section a .go-arrow p{
+    color:black
+}
+
+
+/*========Content css===========*/
+.sec-heading h2 {
+	
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 54px;
+	color: #000000;
+
+}
+
+.sec-heading {
+	margin-bottom: 30px;
+}
+
+.industrycontainer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	/* background-color: #596B8D; */
+}
+
+.go-arrow {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 4px;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+.card2 {
+	display: block;
+	top: 0px;
+	position: relative;
+	max-width: 262px;
+	background-color: white;
+	/* background-color: beige; */
+	/* background-color: #e1f0ff; */
+
+	/* background-color: #f5f5f5; */
+	
+	/* background-color: #d3f7e6; */
+	
+	/* background-color: #f4f0ff; */
+	/* background-color: #ffece6; */
+	/* background: linear-gradient(90deg,rgb(241, 136, 75), rgb(13, 8, 40)5%, rgb(255, 255, 255), rgb(248, 111, 31) 100%);; */
+	border-radius: 15px;
+	padding: 32px 24px;
+	margin: 12px;
+	text-decoration: none;
+	z-index: 0;
+	overflow: hidden;
+	border: 1px solid white;
+	
+}
+.card2 h5 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	color: orangered;
+	/* display: flex; */
+	text-align: center;
+	font-size: 19px;
+}
+.card2 p{
+	/* color:#596B8D; */
+	color: #000000;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 4px;
+}
+.card2:hover {
+	transition: all 0.2s ease-out;
+	box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+	top: -4px;
+	border: 1px solid #ccc;
+	background-color: white;
+}
+
+
+.card2:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: -16px;
+	right: -16px;
+	
+	height: 32px;
+	width: 32px;
+	border-radius: 32px;
+	transform: scale(2);
+	transform-origin: 50% 50%;
+	transition: transform 0.15s ease-out;
+}
+.card2:hover:before {
+	transform: scale(2.15);
+}
+

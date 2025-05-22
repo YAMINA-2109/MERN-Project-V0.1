@@ -1,0 +1,117 @@
+// import { useState } from 'react'
+import Home  from'./pages/home/Home';
+import Services from './pages/servces';
+import About from './pages/about';
+import RendezVous from './pages/rendez-vous/RendezVous';
+import './App.css'
+import Footer from './components/footer/Footer'
+import Navbar from './components/navbar/Navbar'
+import {createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
+
+function App() {
+  const Layout = ()=>{
+    return (
+      <div className="header-bg">
+        <Navbar/> 
+        <Outlet/>
+        <Footer/>
+      </div>
+    )
+  }
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout/>,
+      children:[
+        {
+          path: "/",
+          element: <Home/>
+        },
+        {
+          path: "/services",
+          element: <Services/>
+        },
+        {
+          path: "/about",
+          element: <About/>
+        },
+        // {
+        //   path: "/message/:id",
+        //   element: <Message/>
+        // },
+        // {
+        //   path: "/logout",
+        //   element: <Logout/>
+        // },
+        // {
+        //   path: "/profile",
+        //   element: <Profile/>
+        // },
+        // {
+        //   path: "/verify/:verificationToken",
+        //   element: <Verify/>
+        // },
+        {
+          path: "/rendezVous",
+          element: <RendezVous/>
+        },
+        // {
+        //   path: "/demande/:id",
+        //   element: <Demande/>
+        // },
+        // {
+        //   path: "/register",
+        //   element: <Register/>
+        // },
+      ]
+    }, 
+    // {
+    //       path: "/register",
+    //       element: <Register/>
+    // },
+    {
+        path: "/login",
+        element: <Login/>
+    },
+    // {
+    //   path: "/forgot",
+    //   element: <Forgot/>
+    // },
+    // {
+    //   path: "/resetPassword/:resetToken",
+    //   element: <Reset/>
+    // },
+    // {
+    //   path: "/loginWithCode/:email",
+    //   element: <LoginWithCode/>
+    // },
+    
+  ]);
+
+  return (
+    <div>
+      <RouterProvider router={router} />
+    </div>
+  )
+}
+
+
+// {
+
+//   return (
+//     <main>
+//       <header className="header-bg">
+//         <Navbar/>
+//         <Header/>
+//       </header>
+//       <Features/>
+//       <Download/>
+//       <Subscribe/>
+//       <Faq/>
+//       <RendezVous name='thiziri' color='blue'/>
+//       <Footer/>
+//     </main>
+//   )
+// }
+
+export default App

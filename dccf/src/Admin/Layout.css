@@ -1,0 +1,82 @@
+.mainadmin{
+    padding: 10px;
+    height: 100vh;
+}
+.layoutadmin{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebaradmin{
+    min-height: 100%;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #0a1930;
+    box-shadow: 0 0 2px gray;
+    margin-right: 20px;
+    color: white;
+}
+.contentadmin{
+    width: 100%;
+    height: 100%;
+}
+.headeradmin{
+    height: 10vh;
+    margin-top: 0px!important;
+    margin-bottom: 20px;
+    box-shadow: 0 0 2px gray;
+    background-color: white;
+}
+.bodyadmin{
+    height: 85vh;
+    margin-bottom: 20px;
+    box-shadow: 0 0 2px gray;
+    background-color: white;
+}
+/* .logo{
+    font-size: xx-large;
+    margin: 2px 0;
+} */
+.dccflogoadmin-icon{
+    width: 30px;
+}
+.dccflogoadmin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0
+}
+.dccflogoadmin-text{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--color-white);
+    /* margin: 20px 0 */
+}
+
+.dccflogoadmin-text span{
+    font-weight: 600;
+    color: orangered;
+}
+.menuadmin{
+    margin-top: 50px;
+}
+.menuadmin-item {
+    margin-top: 30px;
+}
+.menuadmin-item a{
+    /* margin-top: 30px; */
+    font-size: 1.5rem;
+    /* color: #0a1930!important; */
+}
+.menuadmin-item i{
+    font-size: 1.5rem;
+    margin: 0 15px;
+    cursor: pointer;
+}
+.activeAdmin{
+    background-color: white;
+    padding: 10px;
+    
+}
+.activeAdmin a, .activeAdmin i{
+    color: #0a1930!important;
+}

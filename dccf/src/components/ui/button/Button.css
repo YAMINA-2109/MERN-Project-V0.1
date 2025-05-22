@@ -1,0 +1,31 @@
+a{
+    font-size: 1.4rem;
+    color: var(--color-white) !important ; 
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+a:hover{
+    color: orangered;
+}
+a.btn{
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+    /* margin-left: 1rem; */
+    font-weight: 500;
+    padding: 5px 8px;
+}
+a.btn:hover{
+    background-color: orangered;
+    color: var(--color-white);
+}
+a.btn-dark{
+    border: 2px solid var(--color-white);
+    background: transparent;
+}
+
+a.btn-orange{
+    border: 2px solid transparent;
+    background: orangered;
+    color: var(--color-white);
+}

@@ -1,0 +1,26 @@
+.firstDiv{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: rgba(0, 0, 0, 0.544);
+    z-index: 9999;
+
+}
+
+/* .secondDiv {
+    width : 10%;
+    height: auto;
+    margin-left:-5px!important;
+    padding-top:2%!important;
+    border-radius:3rem;
+} */
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+

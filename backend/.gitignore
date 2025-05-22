@@ -1,0 +1,12 @@
+# Node modules
+/node_modules
+
+# Env fils
+.env
+
+# logs
+logs/
+*.log
+
+# Build files
+DCCF-CODEÀ/dccf/
